@@ -1,0 +1,68 @@
+<app-menu [titulo]="titulo"></app-menu>
+
+<ion-content class="padding">
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-label class="ion-text-center">
+        <h1>Iniciar Sesión</h1>
+      </ion-label>
+    </ion-card-header>
+    <ion-card-content>
+      <form #formulario="ngForm" (ngSubmit)="onSubmitTemplate()">
+        <ion-list>
+          <ion-item>
+            <ion-label position="floating">Email</ion-label>
+            <ion-input type="email" name="correo" autocomplete="off" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" [(ngModel)]="usuario.correo" required>
+            </ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Password</ion-label>
+            <ion-input type="password" name="clave" autocomplete="off" [(ngModel)]="usuario.clave" required>
+            </ion-input>
+          </ion-item>
+        </ion-list>
+
+        <ion-button shape="round" expand="full" type="submit" [disabled]="formulario.invalid">
+          Entrar
+        </ion-button>
+      </form>
+      <!-- <ion-button
+        expand="full"
+        routerLink="/cambio-clave"
+        color="primary"
+        fill="clear"
+      >
+        Olvide la clave
+      </ion-button> -->
+      <ion-button expand="full" routerLink="/registro" color="primary" fill="clear">
+        Crear Cuenta
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<!--<ion-footer no-border>
+  <ion-toolbar class="ion-text-center">
+    <ion-button
+      class="btn-empresa"
+      slot="start"
+      color="primary"
+      size="small"
+      routerLink="/login-empresa"
+      fill="clear"
+    >
+      Empresa
+    </ion-button>
+    <ion-button
+      class="btn-mype"
+      slot="end"
+      color="primary"
+      size="small"
+      fill="clear"
+      routerLink="/login-mype"
+    >
+      CONAMYPE
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>-->

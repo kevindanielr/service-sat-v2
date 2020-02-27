@@ -1,0 +1,323 @@
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+ion-item {
+  --ion-item-background: transparent;
+}
+
+
+ion-item, p {
+  white-space: normal;
+  text-align: justify;
+}
+
+// backgrounds //
+.w100 {
+  width: 100%;
+}
+
+.bold,
+.fw500 {
+  font-weight: 500 !important;
+}
+
+.fw700 {
+  font-weight: 700 !important;
+}
+
+.text08 {
+  font-size: .8rem;
+}
+
+.text1 {
+  font-size: 1rem !important;
+}
+
+.text12 {
+  font-size: 1.2rem;
+}
+
+.text15 {
+  font-size: 1.5rem;
+}
+
+.text20 {
+  font-size: 2rem;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-primary {
+  color: var(--ion-color-primary);
+}
+
+.text-secondary {
+  color: var(--ion-color-secondary);
+}
+
+.text-dark {
+  color: var(--ion-color-dark);
+}
+
+// menu
+
+ion-toolbar.user-profile {
+
+  .bg-degree {
+    background-color: rgb(2,0,36) !important ;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(91,36,122,1) 30%, rgba(27,206,223,1) 100%) !important;
+  }
+  
+  .user-avatar {
+    width: 45px;
+    height: 45px;
+  }
+
+  .item-inner {
+    border-width: 0;
+  }
+}
+
+// Android card shadow
+ion-card {
+  &.sc-ion-card-md-h {
+    box-shadow: 0 2px 4px rgba(var(--ion-color-dark-rgb), .24);
+  }
+}
+
+// style for auth pages
+.auth-page {
+
+  .grid {
+    padding: 0;
+
+    .col {
+      padding: 0;
+    }
+  }
+
+  .btn-group {
+
+    .button-ios,
+    .button-md {
+      border-radius: 0;
+
+      &:first-of-type {
+        border-radius: 2px 0 0 2px;
+      }
+
+      &:last-of-type {
+        border-radius: 0 2px 2px 0;
+      }
+    }
+  }
+
+  .auth-content {
+    margin: 0 5%;
+
+    .logo {
+      width: 60px;
+      height: 60px;
+      margin: 20px auto 8px;
+      border-radius: 10%;
+      background: url("/assets/img/ionic4start-ico.png") no-repeat;
+      background-size: 100%;
+    }
+
+    .list-form {
+      padding: 0;
+      margin-bottom: 0;
+
+      ion-item {
+        background: none;
+        padding: 0;
+
+        &:first-child {
+          border-top: none;
+        }
+
+        &:after {
+          display: none;
+        }
+
+        ion-label {
+          font-size: 1em;
+          color: var(--ion-color-light);
+        }
+
+        input {
+          color: var(--ion-color-light);
+        }
+      }
+    }
+  }
+
+}
+
+.mto {
+  margin-top: 12px;
+
+  ion-icon {
+    margin-bottom: -2px;
+  }
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/monserat.woff2') format('woff2');
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Material Icons */
+
+/* fallback */
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2") format("woff2");
+}
+
+/* fallback */
+@font-face {
+  font-family: "Material Icons Outlined";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUce.woff2") format("woff2");
+}
+
+/* fallback */
+@font-face {
+  font-family: "Material Icons Round";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUce.woff2") format("woff2");
+}
+
+/* fallback */
+@font-face {
+  font-family: "Material Icons Sharp";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/oPWQ_lt5nv4pWNJpghLP75WiFR4kLh3kvmvR.woff2") format("woff2");
+}
+
+/* fallback */
+@font-face {
+  font-family: "Material Icons Two Tone";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/hESh6WRmNCxEqUmNyh3JDeGxjVVyMg4tHGctNCu0.woff2") format("woff2");
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+.material-icons-outlined {
+  font-family: "Material Icons Outlined";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+.material-icons-round {
+  font-family: "Material Icons Round";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+.material-icons-sharp {
+  font-family: "Material Icons Sharp";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+.material-icons-two-tone {
+  font-family: "Material Icons Two Tone";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+ion-card.sc-ion-card-md-h {
+  // box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3);
+}
+
+ion-card {
+  border-radius: 10px !important;
+}
+
+ion-badge {
+  border-radius: 30px !important;
+}
+
+

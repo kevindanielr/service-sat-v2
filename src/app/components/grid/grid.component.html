@@ -1,0 +1,26 @@
+<ion-grid class=" ion-text-center">
+  <ion-row>
+    <ion-col
+      class="ion-no-padding"
+      size-lg="3"
+      size-md="4"
+      size-sm="6"
+      size="6"
+      *ngFor="let opcion of menu; let i = index"
+    >
+      <ion-card [color]="opcion.color" routerLink="{{ opcion.url }}">
+        <ion-card-header [color]="opcion.colordark">
+          <ion-label>{{ opcion.title }}</ion-label>
+        </ion-card-header>
+        <ion-card-content>
+          <i
+            slot="end"
+            style="font-size:100px;"
+            class="material-icons-outlined"
+            >{{ opcion.icon }}</i
+          >
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>

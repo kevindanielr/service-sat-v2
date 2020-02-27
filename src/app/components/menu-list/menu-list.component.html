@@ -1,0 +1,23 @@
+  <ion-list *ngIf="menu">
+    <ion-item routerLink="/lista-cursos/{{opcion.tipo_curso_id}}" color="light" detail *ngFor="let opcion of menu; let i = index">
+      <ion-avatar slot="start">
+        <img src="{{opcion.imagen}}">
+      </ion-avatar>
+      <ion-label class="ion-text-wrap">
+        <h2>{{opcion.nombre}}</h2>
+        <p>{{ opcion.descripcion }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-list *ngIf="menu.length == 0">
+    <ion-item color="light" detail *ngFor="let index of [1, 2, 3, 4, 5, 6]">
+      <ion-avatar slot="start">
+        <ion-skeleton-text animated></ion-skeleton-text>
+      </ion-avatar>
+      <ion-label class="ion-text-wrap">
+        <ion-skeleton-text animated style="width: 88%"></ion-skeleton-text>
+        <ion-skeleton-text animated style="width: 70%"></ion-skeleton-text>
+      </ion-label>
+    </ion-item>
+  </ion-list>
