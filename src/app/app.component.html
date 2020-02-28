@@ -2,11 +2,8 @@
   <ion-split-pane contentId="main-content">
     <ion-menu contentId="main-content" menuId="menu" (ionDidOpen)="menuOpened()">
       <ion-header>
-        <div class="ion-text-center">
-          <h5>MENU</h5>
-        </div>
-        <ion-toolbar class="user-profile">
-          <ion-item class="ion-margin-bottom bg-degree">
+        <ion-toolbar class="user-profile" color="primary">
+          <ion-item class="ion-margin-bottom">
             <ion-label>
               <ion-text color="light">
                 <h3><strong class="ion-text-capitalize">Daniel Rivas</strong></h3>
@@ -27,8 +24,12 @@
           <ion-menu-toggle auto-hide="false">
             <ion-item routerLink="/home" color="light">
               <i slot="start" class="material-icons-outlined">home</i>
-              <ion-label>Home</ion-label>
+              <ion-label>Mi perfil</ion-label>
             </ion-item>
+            <ion-item routerLink="/sucursales" color="light">
+              <i slot="start" class="material-icons-outlined">business</i>
+              <ion-label>Sucursales</ion-label>
+            </ion-item>  
             <ion-item routerLink="/lista-encuesta" color="light">
               <i slot="start" class="material-icons-outlined">library_books</i>
               <ion-label>Encuestas disponibles</ion-label>

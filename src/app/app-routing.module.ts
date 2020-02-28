@@ -18,6 +18,18 @@ const routes: Routes = [
   },  {
     path: 'lista-encuesta',
     loadChildren: () => import('./pages/lista-encuesta/lista-encuesta.module').then( m => m.ListaEncuestaPageModule)
+  },
+  {
+    path: 'sucursales',
+    loadChildren: () => import('./pages/sucursales/sucursales.module').then( m => m.SucursalesPageModule)
+  },
+  {
+    path: 'encuesta',
+    loadChildren: () => import('./pages/encuesta/encuesta.module').then( m => m.EncuestaPageModule)
+  },
+  {
+    path: 'encuesta-simple',
+    loadChildren: () => import('./pages/encuesta-simple/encuesta-simple.module').then( m => m.EncuestaSimplePageModule)
   }
 
 ];

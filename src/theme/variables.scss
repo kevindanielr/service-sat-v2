@@ -3,18 +3,18 @@
 
   //Paleta Material Desing
   /** primary **/
-  --ion-color-primary: #303f9f;
-  --ion-color-primary-rgb: 48, 63, 159;
+  --ion-color-primary: #00838f;
+  --ion-color-primary-rgb: 0,131,143;
   --ion-color-primary-contrast: #ffffff;
-  --ion-color-primary-contrast-rgb: 255, 255, 255;
-  --ion-color-primary-shade: #2a378c;
-  --ion-color-primary-tint: #4552a9;
+  --ion-color-primary-contrast-rgb: 255,255,255;
+  --ion-color-primary-shade: #00737e;
+  --ion-color-primary-tint: #1a8f9a;
 
   /** secondary **/
   --ion-color-secondary: #c5cae9;
-  --ion-color-secondary-rgb: 197, 202, 233;
+  --ion-color-secondary-rgb: 197,202,233;
   --ion-color-secondary-contrast: #000000;
-  --ion-color-secondary-contrast-rgb: 0, 0, 0;
+  --ion-color-secondary-contrast-rgb: 0,0,0;
   --ion-color-secondary-shade: #adb2cd;
   --ion-color-secondary-tint: #cbcfeb;
 
@@ -216,6 +216,20 @@
   --ion-color-greylight-shade: #bbbbbb;
   --ion-color-greylight-tint: #d8d8d8;
 
+  --ion-color-background: #E1E2E1;
+  --ion-color-background-rgb: 225,226,225;
+  --ion-color-background-contrast: #000000;
+  --ion-color-background-contrast-rgb: 0,0,0;
+  --ion-color-background-shade: #c6c7c6;
+  --ion-color-background-tint: #e4e5e4;
+
+  --ion-color-dark: #005662;
+  --ion-color-dark-rgb: 0,86,98;
+  --ion-color-dark-contrast: #ffffff;
+  --ion-color-dark-contrast-rgb: 255,255,255;
+  --ion-color-dark-shade: #004c56;
+  --ion-color-dark-tint: #1a6772;
+
 }
 
 /* Optional CSS, this is added for the flashing that happens when toggling between themes */
@@ -248,6 +262,15 @@ ion-item {
   --ion-color-contrast-rgb: var(--ion-color-pink-contrast-rgb);
   --ion-color-shade: var(--ion-color-pink-shade);
   --ion-color-tint: var(--ion-color-pink-tint);
+}
+
+.ion-color-background {
+  --ion-color-base: var(--ion-color-background);
+  --ion-color-base-rgb: var(--ion-color-background-rgb);
+  --ion-color-contrast: var(--ion-color-background-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-background-contrast-rgb);
+  --ion-color-shade: var(--ion-color-background-shade);
+  --ion-color-tint: var(--ion-color-background-tint);
 }
 
 .ion-color-greylight {
@@ -420,11 +443,20 @@ ion-item {
   --ion-color-tint: var(--ion-color-teallight-tint);
 }
 
+.ion-color-dark {
+  --ion-color-base: var(--ion-color-dark);
+  --ion-color-base-rgb: var(--ion-color-dark-rgb);
+  --ion-color-contrast: var(--ion-color-dark-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-dark-contrast-rgb);
+  --ion-color-shade: var(--ion-color-dark-shade);
+  --ion-color-tint: var(--ion-color-dark-tint);
+}
+
 ion-card {
   border-radius: 20px;
   --background: #ffff;
 }
 
 ion-content{
-  --ion-background-color:#F2F2F2;
+  --ion-background-color:#e1e2e1;
 }

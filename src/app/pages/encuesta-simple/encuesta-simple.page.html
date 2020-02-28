@@ -1,0 +1,67 @@
+<ion-header no-border translucent>
+  <ion-toolbar color="primary" class="ion-text-uppercase">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <h6>Encuesta</h6>
+  </ion-toolbar>
+</ion-header>
+<ion-content color="dark">
+  <ion-slides>
+    <ion-slide>
+      <ion-card color="light" class="login-box-centered">
+        <ion-card-header color="background">
+          <ion-card-title>¿Que piensas del diseño de este aplicativo movil?</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-grid class=" ion-text-center">
+            <ion-row>
+              <ion-col class="ion-no-padding" size-lg="3" size-md="3" size-sm="12" size="12"
+                *ngFor="let opcion of [1,1,1,1]; let i = index">
+                <ion-item>
+                  <ion-avatar slot="start">
+                    <img src="https://i0.pngocean.com/files/27/957/129/emoji-smirk-snapchat-smiley-whatsapp-emoji.jpg">
+                  </ion-avatar>
+                </ion-item>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card color="light" class="login-box-centered">
+        <ion-card-header color="background">
+          <ion-card-title>¿Que piensas del diseño de este aplicativo movil?</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          ¿Que piensas del diseño de este aplicativo movil?
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card color="light" class="login-box-centered">
+        <ion-card-header color="background">
+          <ion-card-title>¿Que piensas del diseño de este aplicativo movil?</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          ¿Que piensas del diseño de este aplicativo movil?
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card color="light" class="login-box-centered">
+        <ion-card-header color="background">
+          <ion-card-title>¿Que piensas del diseño de este aplicativo movil?</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          ¿Que piensas del diseño de este aplicativo movil?
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+
+  </ion-slides>
+</ion-content>

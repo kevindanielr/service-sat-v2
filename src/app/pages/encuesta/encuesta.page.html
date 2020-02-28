@@ -1,0 +1,200 @@
+<ion-header no-border translucent>
+  <ion-toolbar color="primary" class="ion-text-uppercase">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <h6>Encuesta</h6>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+
+  <ion-grid>
+    <ion-row>
+      <ion-card color="background">
+        <ion-col size="12">
+          <div class="ion-float-left">
+            <ion-list-header>
+              <ion-label><h1 class="ion-float-left ion-text-uppercase ion-text-wrap">Encuesta #1 - Satisfacción del cliente.</h1></ion-label>
+            </ion-list-header>
+            <ion-item>
+              <ion-thumbnail slot="end">
+                <img src="https://graffica.info/wp-content/uploads/2017/07/Pizza_Hut_Logo_3.png">
+              </ion-thumbnail>
+              <ion-label>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa magni possimus, aliquid excepturi praesentium </p>
+              </ion-label>
+            </ion-item>
+          </div>
+        </ion-col>
+      </ion-card>
+    </ion-row>
+  </ion-grid>
+
+  <ion-card color="light">
+    <ion-toolbar color="background">
+      <div class="ion-text-center">
+        <h5>¿Como responderías esta pregunta?</h5>
+      </div>
+    </ion-toolbar>
+    <ion-card-content color="light">
+      <div class="ion-text-center">
+          <ion-grid fixed>
+            <ion-row>
+              <ion-col size="6">
+                <ion-button (click)="onClick()" color="success" expand="block" fill="solid" shape="round">
+                  SI
+                </ion-button>
+              </ion-col>
+              <ion-col size="6">
+                <ion-button (click)="onClick()" color="danger" expand="block" fill="solid" shape="round">
+                  NO
+                </ion-button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card color="light">
+    <ion-toolbar color="background">
+      <div class="ion-text-center">
+        <h5>¿Como responderías esta pregunta, seleccionando una opción?</h5>
+      </div>
+    </ion-toolbar>
+    <ion-card-content color="light">
+      <div class="ion-text-center">
+        <ion-radio-group color="light">        
+          <ion-item color="light">
+            <ion-label>Respuesta numero 1</ion-label>
+            <ion-radio value="cord"></ion-radio>
+          </ion-item>
+      
+          <ion-item color="light">
+            <ion-label>Respuesta numero 2</ion-label>
+            <ion-radio value="duesenberg"></ion-radio>
+          </ion-item>
+      
+          <ion-item color="light">
+            <ion-label>Respuesta numero 3</ion-label>
+            <ion-radio value="hudson"></ion-radio>
+          </ion-item>
+      
+          <ion-item color="light">
+            <ion-label>Respuesta numero 4</ion-label>
+            <ion-radio value="packard"></ion-radio>
+          </ion-item>
+      
+          <ion-item color="light">
+            <ion-label>Respuesta numero 5</ion-label>
+            <ion-radio value="studebaker"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card color="light">
+    <ion-toolbar color="background">
+      <div class="ion-text-center">
+        <h5>¿Como responderías esta pregunta, seleccionando varias opciones?</h5>
+      </div>
+    </ion-toolbar>
+    <ion-card-content color="light">
+      <div class="ion-text-center">
+        <ion-item>
+          <ion-checkbox color="primary" slot="start"></ion-checkbox>
+          <ion-label>Respuesta 1 - Arya Stark</ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-checkbox color="primary" slot="start"></ion-checkbox>
+          <ion-label>Respuesta 2 - Bran Stark</ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-checkbox color="primary" slot="start"></ion-checkbox>
+          <ion-label>Respuesta 3 - Catelyn Stark</ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-checkbox color="primary" slot="start"></ion-checkbox>
+          <ion-label>Respuesta 4 - Khal Drogo</ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-checkbox color="primary" slot="start"></ion-checkbox>
+          <ion-label>Respuesta 5 - Sansa Stark</ion-label>
+        </ion-item>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card color="light">
+    <ion-toolbar color="background">
+      <div class="ion-text-center">
+        <h5>¿Como responderías esta pregunta con texto?</h5>
+      </div>
+    </ion-toolbar>
+    <ion-card-content>
+      <div class="ion-text-left">
+        <ion-label>Escriba brevemente su respuesta:</ion-label>
+        <ion-item color="background">
+          <ion-textarea placeholder="Escriba..." clearOnEdit="true"></ion-textarea>
+        </ion-item>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card color="light">
+    <ion-toolbar color="background">
+      <div class="ion-text-center">
+        <h5>¿Como responderías esta pregunta con números?</h5>
+      </div>
+    </ion-toolbar>
+    <ion-card-content color="light">
+      <div class="ion-text-center">
+        <ion-item color="background">
+          <ion-input placeholder="Digite un número" type="number"></ion-input>
+        </ion-item>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card color="light">
+    <ion-toolbar color="background">
+      <div class="ion-text-center">
+        <h5>¿Como responderías esta pregunta con fecha?</h5>
+      </div>
+    </ion-toolbar>
+    <ion-card-content color="light">
+      <div class="ion-text-center">
+        <ion-item color="background">
+          <ion-label>Seleccione una fecha</ion-label>
+          <ion-datetime value="2020-02-20"
+          monthShortNames='Ene, Feb, Mar, Abr, May, Jun, Jul, Ago, Sep, Oct, Nov, Dic' 
+          doneText="Ok" cancelText="Cancelar" placeholder="Seleccione una fecha"></ion-datetime>
+        </ion-item>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card color="light">
+    <ion-toolbar color="background">
+      <div class="ion-text-center">
+        <h5>¿Como responderías esta pregunta con una hora?</h5>
+      </div>
+    </ion-toolbar>
+    <ion-card-content color="light">
+      <div class="ion-text-center">
+        <ion-item color="background">
+          <ion-label>Seleccione una hora</ion-label>
+          <ion-datetime display-format="h:mm A"
+          doneText="Ok" cancelText="Cancelar" picker-format="h:mm A" value="2020-02-29T07:43Z"></ion-datetime>
+        </ion-item>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
